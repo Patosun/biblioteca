@@ -34,6 +34,7 @@
 
             <!-- Page Content -->
             <main>
+                <x-s
                 {{ $slot }}
             </main>
         </div>

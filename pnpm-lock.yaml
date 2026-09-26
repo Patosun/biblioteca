@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@fortawesome/fontawesome-free':
+        specifier: ^7.3.1
+        version: 7.3.1
       sweetalert2:
         specifier: ^11.26.25
         version: 11.26.25
@@ -53,6 +56,10 @@ packages:
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
+
+  '@fortawesome/fontawesome-free@7.3.1':
+    resolution: {integrity: sha512-wmglKKPDIkgV3aWlZzWECCPoGIkYCulzBwxG9+w7rc5BGapZ6cPMpoPOT8k36J0Ni7PPX6c/rsoMWfS4d1MUMg==}
+    engines: {node: '>=6'}
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -1081,6 +1088,8 @@ snapshots:
     optional: true
 
   '@alloc/quick-lru@5.2.0': {}
+
+  '@fortawesome/fontawesome-free@7.3.1': {}
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
