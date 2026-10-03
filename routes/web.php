@@ -16,4 +16,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
     Route::get('users/index', [UserController::class, 'index'])->name('users.index');
+    Route::get('users/create', [UserController::class, 'create'])->name('users.create');
 });
