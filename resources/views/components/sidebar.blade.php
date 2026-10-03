@@ -9,7 +9,7 @@
             <nav>
                 <ul class="p-4 space-y-2">
                     <a href="a" class="block px-4 py-3 hover:bg-line-300"><i class="fas fa-home"></i> Inicio</a>
-                    <a href="b" class="block px-4 py-3 hover:bg-line-300"><i class="fas fa-user"></i> Usuario</a>
+                    <a href="{{ route('users.index') }}" class="block px-4 py-3 hover:bg-line-300"><i class="fas fa-user"></i> Usuario</a>
                     <a href="c" class="block px-4 py-3 hover:bg-line-300"><i class="fas fa-book"></i> Producto</a>
                     <a href="d" class="block px-4 py-3 hover:bg-line-300"><i class="fas fa-cog"></i> configuracion</a>
                 </ul>
@@ -25,6 +25,13 @@
                 <h2 class="text-xl font-bold">Dashboard</h2>
                 <h3 class="text-sm text-gray-400">when haces tus momos en laravel</h3>
             </header>
+            <section class="p-4">
+                <div>
+                    {{$slot}}
+                    hola
+                </div>
+
+            </section>
             <div class="p-4 text-cyan-900">
                 xdddd but no te gusta php
             </div>
