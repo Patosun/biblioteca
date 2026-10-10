@@ -17,4 +17,7 @@ Route::middleware([
     })->name('dashboard');
     Route::get('users/index', [UserController::class, 'index'])->name('users.index');
     Route::get('users/create', [UserController::class, 'create'])->name('users.create');
+    Route::post('users/store', [UserController::class, 'store'])->name('users.store');
+    Route::get('users/edit/{code}', [UserController::class, 'edit'])->name('users.edit');
+    Route::put('/users/{code}', [UserController::class, 'update'])->name('users.update');
 });

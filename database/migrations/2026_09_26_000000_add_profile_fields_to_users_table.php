@@ -13,13 +13,15 @@ return new class extends Migration
             $table->string('materno')->nullable();
             $table->string('telefono')->nullable();
             $table->string('direccion')->nullable();
+            $table->string('carnet')->nullable()->unique();
+            $table->boolean('estado')->default(true);
         });
     }
 
     public function down(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn(['paterno', 'materno', 'telefono', 'direccion']);
+            $table->dropColumn(['paterno', 'materno', 'telefono', 'direccion', 'carnet', 'estado']);
         });
     }
 };
